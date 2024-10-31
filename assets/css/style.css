@@ -1,0 +1,161 @@
+/* 
+ * Helper classes. 
+ * 
+ * These classes allow to add basic styles quickly.  
+ */
+.m-0 {
+    margin: 0 !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.mt-0 {
+    margin-top: 0 !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.mr-2 {
+    margin-right: .5rem !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.d-flex {
+    display: flex !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.justify-content-end {
+    justify-content: flex-end !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.text-capitalize {
+    text-transform: capitalize !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+/*
+ * 1.0 No posts found.
+ *
+ * These styles apply to the screen of custom posts types registered by ProLocker 
+ * when there are no posts.
+ */
+.prolocker-no-posts {
+    width: 100%;
+    max-width: 32rem;
+    padding-top: 6.25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.prolocker-no-posts__icon {
+    display: block;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    color: #bdbdbd;
+}
+
+.prolocker-no-posts__icon::before {
+    font-size: 6.25rem;
+    text-shadow: .125rem .125rem .188rem rgba(0, 0, 0, .3);
+}
+
+.prolocker-no-posts__message {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* 
+ * 1.1 Custom add new button container.
+ *
+ * Styles applied to the add new button container.
+ */
+.prolocker-custom-add-new-container {
+    display: inline-block;
+    margin-left: 4px;
+    position: relative;
+    top: -4px;
+    font-weight: 700;
+}
+
+/* 
+ * 2.0 Prokey post edit screen.
+ *
+ * Styles applied to the post edit screen.
+ */
+.post-type-prokey #post-body-content, 
+.post-type-prokey .edit-form-section {
+    margin-bottom: 0;
+}
+
+/* 
+ * 2.1 ProKey details metabox.
+ *
+ * Styles applied to the Prokey details metabox.
+ */
+.prokey-details-title {
+    margin-bottom: 1rem !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.prokey-details-info {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 180px 1fr;
+    margin-bottom: 2rem;
+}
+
+.prokey-details-post-title {
+    padding: 0 !important; /* So we can override WordPress' and/or browser default styles */
+    margin-bottom: 1rem !important; /* So we can override WordPress' and/or browser default styles */
+}
+
+.prokey-details-post-info {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 100px 1fr;
+}
+
+/* 
+ * 2.2 ProKey IP addresses metabox.
+ *
+ * Styles applied to the ProKey IP addresses metabox.
+ */
+.prokey-ip-addresses-list {
+    display: grid;
+    gap: .25rem;
+    margin-bottom: 0;
+}
+
+.prokey-ip-addresses-list-item {
+    cursor: pointer;
+}
+
+@media (min-width: 480px) {
+    .prokey-ip-addresses-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .prokey-ip-addresses-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .prokey-ip-addresses-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .prokey-ip-addresses-list-item__add {
+        visibility: hidden;
+    }
+
+    .prokey-ip-addresses-list-item:hover .prokey-ip-addresses-list-item__add,
+    .prokey-ip-addresses-list-item--adding .prokey-ip-addresses-list-item__add {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1440px) {
+    .prokey-ip-addresses-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

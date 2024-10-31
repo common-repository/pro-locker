@@ -1,0 +1,29 @@
+/**
+ * Hit counter block styles
+ *
+ * These styles are applied to the block extract that indicates blocked content 
+ * on the front end.
+ */
+.prolocker-locking-block {
+    padding: 16px;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 4px;
+}
+
+.prolocker-locking-block--twenty-nineteen {
+    border-color: rgba(0, 115, 170, .4);
+}
+
+.prolocker-locking-block--twenty-twenty {
+    border-color: rgba(205, 38, 83, .4);
+}
+
+.prolocker-locking-block--go-first {
+    border-color: var(--color-primary, #4285f4);
+}
+
+.prolocker-locking-block-unlocked-container {
+    margin-bottom: 16px;
+}

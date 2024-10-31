@@ -1,0 +1,19 @@
+/**
+ * Hit counter block styles
+ *
+ * These styles are applied to the Hit Counter block in the WordPress editor.
+ */
+.wp-block-prolocker-hit-counter {
+    padding: 24px;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+.wp-block-prolocker-hit-counter-locking-options-text {
+    text-align: center;
+    font-size: 20px !important;
+}
+
+.wp-block-prolocker-hit-counter-preview-text {
+    margin-bottom: -20px !important;
+}
